@@ -10,9 +10,7 @@ const TodoList = ({ setTodos, todos, filtered }) => {
           <Todo
             todo={todo}
             key={todo.id}
-            //id={todo.id}
             text={todo.text}
-            //done={todo.completed}
             setTodos={setTodos}
             todos={todos}
           />

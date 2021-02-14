@@ -2,7 +2,7 @@ import React from "react";
 
 const Todo = ({ text, todo, setTodos, todos }) => {
   //events
-  const handlerDelete = (e) => {
+  const handlerDelete = () => {
     // cuando hagamos click disparamos la funcion handlerDelete, esta filtrara los elementos que no coincidan en su id
     setTodos(todos.filter((el) => el.id !== todo.id));
   };

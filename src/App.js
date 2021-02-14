@@ -18,7 +18,6 @@ function App() {
 
   //USE EFFECT
   //useEffect nos permite correr una funcion cada vez que un estado cambia
-
   useEffect(() => {
     handlerFiltered();
     saveLocalTodos();
@@ -28,10 +27,11 @@ function App() {
   const handlerFiltered = () => {
     switch (status) {
       case "completed":
-        setFiltered(todos.filter((todo) => todo.completed === true));
+        setFiltered(todos.filter((item) => item.completed === true));
         break;
       case "uncompleted":
-        setFiltered(todos.filter((todo) => todo.completed === false));
+        setFiltered(todos.filter((item) => item.completed === false));
+        break;
       default:
         setFiltered(todos);
         break;
