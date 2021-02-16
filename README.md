@@ -1,3 +1,1 @@
-I have a little problem, react don´t read the state uncompleted on false so is broken...
 
-I need revisited this issue.
